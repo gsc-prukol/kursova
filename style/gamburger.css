@@ -1,13 +1,7 @@
-body {
-    font-family: Arial;  
-    font-size: 15px;  
-    line-height: 22px;  
-    background: #999; 
-    margin:0px;
-}
+
 .gamburger1 {
     position: fixed;    
-    z-index: 9999;    
+    z-index: 5999;    
     top: 0px;    
     right: 0px;
 }
@@ -17,12 +11,13 @@ body {
     height: 39px;    
     text-align: center;    
     font-size: 34px;        
-    background: #1c4482;    
+    background-color: rgb(25, 25, 25);
+    background-image: url("../image/burm.png");    
     padding-top: 4px;    
     cursor: pointer;    
 }
 .gamburger1 i.gamburger3:hover {    
-    background: #fff;    
+    background-image: url("../image/burm1.png");  
     color: #1c4482;   
 }
 .gamburger2 {
@@ -37,7 +32,7 @@ body {
     visibility: hidden;    
     transition: all 0.3s ease;    
     -webkit-transition: all 0.3s ease;    
-    background: #fff;    
+    background: rgb(25, 25, 25);    
     padding: 15px 25px;
 }
 .gamburger5 {list-style-type: none;    
@@ -48,4 +43,4 @@ body {
 .gamburger5 li a {font-size: 17px;    
     color: #dc0056;    
     text-decoration: none;}
-.gamburger5 li a:hover {color: #222;}
+.gamburger5 li a:hover {color: rgb(130, 85, 255);}

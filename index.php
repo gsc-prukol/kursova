@@ -11,6 +11,24 @@
     <script type="text/javascript"> 
         $(window).load(function() {$('#featured').orbit();});
     </script>
+    <script>
+        $(document).ready(function() {
+        $(".gamburger3").click(function() {
+        if($(".gamburger3").attr('datas') == 'off') {     /* появление меню */
+        $(".gamburger4").attr('style', 'visibility: visible; margin-right: 0px;');
+        $(".gamburger3").attr('datas', 'on');
+        $(".gamburger3").removeClass("fa-bars");
+        $(".gamburger3").addClass("fa-times");
+        }
+        else {                                         /* исчезновение меню */
+        $(".gamburger4").attr('style', 'visibility: hidden; margin-right: -1000px;');
+        $(".gamburger3").attr('datas', 'off');
+        $(".gamburger3").removeClass("fa-times");
+        $(".gamburger3").addClass("fa-bars");
+        }
+        });
+        });
+        </script>
 </head>
 
 <body>
@@ -31,6 +49,18 @@
                     -->
                 </div>
             </div>
+            <div class="gamburger1">
+                    <div class="gamburger2">
+                    <i class="fa fa-bars gamburger3" datas="off"></i>
+                    <div class="gamburger4">
+                    <ul class="gamburger5">
+                    <li><a href="./scripts/video50.php"><i class="fa fa-angle-right"></i> Переглянути відео, додане на сайт</a></li>
+                    <li><a href="./scripts/groups.php"><i class="fa fa-angle-right"></i> Переглянути групи відео</a></li>
+                    <li><a href="./scripts/rand50.php"><i class="fa fa-angle-right"></i> 50 випадкових відео</a></li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
             <h2>Рейтинг очікування</h2>
               <div id="featured"> 
                 <a href="https://uafilm.tv/1018-madagaskar-3.html" target="_blank">
