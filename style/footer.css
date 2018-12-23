@@ -7,6 +7,9 @@
 {
     background-color: rgb(20, 20, 20);
 }
+.footer h2 {
+    margin: 0;
+}
 .footer ul
 {
     display: inline-block;
@@ -27,16 +30,9 @@
 .footer nav
 {
     position: relative;
-    
 }
 
-.footer h2
-{
-    font-size: 250%;
-    color: rgb(100, 100, 100);
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+
 
 
 
