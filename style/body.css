@@ -118,24 +118,22 @@ body
     text-align: center;
     color: rgb(39, 39, 39);
 }
-.content-wrapper .main_part article div
+.content-wrapper .main_part article div , span
 {
-   padding: 1em;
+   padding: 0.25em;
 }
-.content-wrapper .main_part article span
-{
-   padding: 1em;
-}
+
 .content-wrapper .main_part .article1 ol li div {
     display: flex;
     justify-content: space-between;
 }
 .content-wrapper .main_part .article1 ol li div button{
     border: 1px solid blue;
-        background-color: white;
-        border-radius: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 aside a:hover
 {
@@ -228,4 +226,18 @@ input[type="password"] {
 aside a
 {
 	color: white;
+}
+.content-wrapper .main_part .article2 form
+{
+   margin: 0 25%;
+}
+
+.content-wrapper .main_part .article2 form button{
+    border: 2px solid rgb(70, 0, 100);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+       
 }
