@@ -7,11 +7,11 @@ require 'connect.php';
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 echo <<<HERE
-                <li><a href={$row[url]} target='_blank'>{$row["name"]}</a>
+                <li><div><a href={$row[url]} target='_blank'>{$row["name"]}</a>
                 <form action="./scripts/add_video_me.php" method="post">
                         <button name="id_video" type="submit" value="{$row['id_video']}">Зберегти</button>
                 </form>
-                </li> 
+                </div></li> 
 HERE;
             }
         }
