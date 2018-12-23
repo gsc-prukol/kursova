@@ -213,5 +213,11 @@ input[type="text"] {
 }
 .content-wrapper .main_part .article1 table tr:hover 
 {
+
     background-color: #bbb;
+    border: 1px solid black;
+}
+aside a
+{
+	color: white;
 }
