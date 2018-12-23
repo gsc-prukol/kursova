@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Головна сторінка</title>
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
     <link href='style/main.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.orbit.js"></script>
+    <script type="text/javascript"> 
+        $(window).load(function() {$('#featured').orbit();});
+    </script>
 </head>
 
 <body>
@@ -25,40 +31,16 @@
                     -->
                 </div>
             </div>
-           <!--<div class="forms">
-               <?php 
-               /*if (empty($_SESSION['login']) or empty($_SESSION['id_user']))
-               {
-               // Если пусты, то мы не выводим ссылку
-               echo '<form autocomplete="on" class="log_up" action="./scripts/reg.php" method="post" >';
-                echo     '<input type="submit" value="Зареєструватись">';
-                echo '</form>';
-                echo '<form autocomplete="on" class="log_in" action="./scripts/log_in.php">
-                    <input type="submit" value="Ввійти">
-                </form>';
-               }
-               else
-               {
-               // Если не пусты, то мы выводим ссылку
-               echo "Привіт, ".$_SESSION['name'].".";
-               echo '<form autocomplete="on" class="log_out" action="./scripts/exit.php">
-                    <input type="submit" value="Вийти">
-                </form>';
-               }
-               
-                */?>
-                <form name='search' method='get' autocomplete="on" class="search">
-                    <input type="search" aria-label="Пошук">
-                    <input type="submit" value="Пошук">
-                </form>
-            </div>-->
-
             <h2>Рейтинг очікування</h2>
-            <figure>
-                <img src='image/header1.png' alt='Мадагаскар 3' />
-                <figcaption>Мадагаскар 3. <br> Вже на сайті.</figcaption>
-            </figure>
-        </header>
+              <div id="featured"> 
+                <a href="https://uafilm.tv/1018-madagaskar-3.html" target="_blank">
+                    <img src="image/header1.png" alt="Link" />
+                </a>
+                <a href="http://kino-na-xati.com/boyovyk/venom-online.html" target="_blank">
+                    <img src="image/venom.jpg" alt="Ezio" rel="ezioCaption" />
+                </a>
+            </div> 
+         </header>
         <div class="main_part">
             <aside class="aside_left">
                 <section>
@@ -71,38 +53,14 @@
 
 
             <article class="article1">
-                <!--<h2> Що йде в кінотеатрах</h2>-->
                 <ol>
                 <?php require './scripts/output.php'; ?>
                 </ol>
             </article >
             <article class="article2">
             <?php require './scripts/out_page_select.php'; ?>
-               <!-- <h2>Poglat hladachiv</h2>
-                <p> Tut text pro ce vse</p>-->
             </article>
-            <!--<article class="article3">
-                <h2> Новини серіалів</h2>
-                <div> <img src='image/dictator.png' alt='Диктатор'>
-                    <main>                               
-                        <span>
-                            Тут текст Девіда Шор про фінал Доктора Хауса.багато тексту, дуже багато тексту. Прям ну вде що неможна, стільки тексту. 
-                            Прям ну вде що неможна, стільки тексту.
-                        </span> 
-                    </main>
-                </div>
-                <div> <img src='image/stark.png' alt='Старк'>
-                    <main> 
-                        <span>
-                            Тут текст Девіда Моррісса про роль губернатора.
-                            багато тексту, дуже багато тексту. Прям ну вде що неможна, стільки тексту. 
-                            Прям ну вде що неможна, стільки тексту. Прям ну вде що неможна, стільки тексту.
-                        </span> 
-                    </main>
-                </div>
-            </article>
--->
-            <aside class = aside_right>
+                    <aside class = aside_right>
                 <div>
                     <h2>П'ять найпопулярніших фільмів</h2>
                     <ol>
@@ -115,14 +73,6 @@
                     <?php require './scripts/rand5.php';?>
                     </ol>
                 </div>
-
-                <!--<div>
-                    <h2>Vupadkovi filmu</h2>
-                    <figure>
-                        <img src='image/morboy.png' alt='Морський бій'>
-                        <figcaption>Морський бій</figcaption>
-                    </figure>
-                </div>-->
             </aside>
         </div>
         <footer class="footer">
