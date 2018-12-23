@@ -186,6 +186,14 @@ input[type="text"] {
     width: 90%;
     height: 25px;
 }
+input[type="password"] {
+    border: #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 90%;
+    height: 25px;
+}
+
 .content-wrapper .main_part aside section {
     margin-bottom: 10px;
     padding: 5px 0;
