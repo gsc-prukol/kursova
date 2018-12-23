@@ -1,5 +1,5 @@
 <?php
-$dbservername = "10.35.2.26";
+$dbservername = "zanner.org.ua";
 $dbusername = "ka66_03";
 $dbpassword = "djKjlz14nfyr";
 $dbname = "ka66_03";
