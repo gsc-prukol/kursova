@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
     <link href='style/main.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.orbit.js"></script>
+    <script type="text/javascript" src="js/jquery.orbit.min.js"></script>
     <script type="text/javascript">
 			$(window).load(function() {
 				$('#featured').orbit({
