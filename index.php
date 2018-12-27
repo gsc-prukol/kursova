@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
     <link href='style/main.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.orbit.min.js"></script>
+    <script type="text/javascript" src="js/jquery.orbit.js"></script>
     <script type="text/javascript">
 			$(window).load(function() {
 				$('#featured').orbit({
@@ -17,17 +17,17 @@
 				});
 			});
         </script>
-    <script>/*
+    <script>
         $(document).ready(function() {
         $(".gamburger3").click(function() {
         if($(".gamburger3").attr('datas') == 'off') {     /* появление меню */
-     /*   $(".gamburger4").attr('style', 'visibility: visible; margin-right: 0px;');
+        $(".gamburger4").attr('style', 'visibility: visible; margin-right: 0px;');
         $(".gamburger3").attr('datas', 'on');
         $(".gamburger3").removeClass("fa-bars");
         $(".gamburger3").addClass("fa-times");
         }
         else {                                         /* исчезновение меню */
-     /*   $(".gamburger4").attr('style', 'visibility: hidden; margin-right: -1000px;');
+        $(".gamburger4").attr('style', 'visibility: hidden; margin-right: -1000px;');
         $(".gamburger3").attr('datas', 'off');
         $(".gamburger3").removeClass("fa-times");
         $(".gamburger3").addClass("fa-bars");
