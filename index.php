@@ -8,9 +8,15 @@
     <link href='style/main.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.orbit.js"></script>
-    <script type="text/javascript"> 
-        $(window).load(function() {$('#featured').orbit();});
-    </script>
+    <script type="text/javascript">
+			$(window).load(function() {
+				$('#featured').orbit({
+					'bullets': true,
+					'timer' : true,
+					'animation' : 'horizontal-slide'
+				});
+			});
+        </script>
     <script>
         $(document).ready(function() {
         $(".gamburger3").click(function() {
