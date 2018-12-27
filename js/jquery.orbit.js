@@ -27,7 +27,7 @@
             var images = orbit.find('img, a img');
             images.each(function() {
                 var _img = $(this);
-                var _imgWidth =  "100%"; //img.width();
+                var _imgWidth =  "100%"; //_img.width();
                 var _imgHeight = _img.height();
                 orbit.width(_imgWidth);
                 orbitWidth = orbit.width()
