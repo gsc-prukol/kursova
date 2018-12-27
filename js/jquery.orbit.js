@@ -1,17 +1,5 @@
-/*
- * jQuery Orbit Plugin 1.1 
- * www.ZURB.com/playground
- * Copyright 2010, ZURB
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
-*/
-
-
 (function($) {
-
     $.fn.orbit = function(options) {
-
-        //Yo' defaults
         var defaults = {  
             animation: 'horizontal-slide', //fade, horizontal-slide, vertical-slide
             animationSpeed: 800, //how fast animtions are
@@ -24,22 +12,17 @@
             timer: true, //true or false to have the timer
             bullets: true //true or false to activate the bullet navigation
             };  
-        
         //Extend those options
         var options = $.extend(defaults, options); 
-	
         return this.each(function() {
-        
             //important global goodies
             var activeImage = 0;
             var numberImages = 0;
             var orbitWidth;
             var orbitHeight;
             var locked;
-            
             //Grab each Shifter and add the class
             var orbit = $(this).addClass('orbit')
-            
             //Collect all images and set slider size to biggest o' da images
             var images = orbit.find('img, a img');
             images.each(function() {
@@ -52,10 +35,8 @@
                 orbitHeight = orbit.height();
                 numberImages++;
             });
-            
             //set initial front photo z-index
             images.eq(activeImage).css({"z-index" : 3});
-            
             //Timer info
             if(options.timer) {         	
                 var timerHTML = '<div class="timer"><span class="mask"><span class="rotator"></span></span><span class="pause"></span></div>'
@@ -262,9 +243,9 @@
                         }
                         if(options.captions) { setCaption(); }
                     }
-                } //lock
-            }//orbit function
-        });//each call
-    }//orbit plugin call
+                } 
+            }
+        });
+    }
 })(jQuery);
         
