@@ -40,7 +40,7 @@ span.rotator {
 }
  span.rotator.move { left: 0; }
  span.mask.move { width: 40px; left: 0; 
-    background: url('../image/timer-black.png') repeat 0px 0px;  }
+    background: url('../image/timer-black.png')  no-repeat 0px 0px;  }
  span.pause { display: block; width: 40px; 
     height: 40px; position: absolute; top: 0; 
     left: 0px; background: url('../image/pause-black.png') no-repeat; 
@@ -63,8 +63,8 @@ span.rotator {
  div.slider-nav span { width: 33px; height: 33px; 
     text-indent: -9999px; position: absolute; 
     z-index: 1000; top: 43%; cursor: pointer; }
- div.slider-nav span.right { background: url('../image/right-arrow.png'); right: 10px; }
- div.slider-nav span.left { background: url('../image/left-arrow.png'); left: 10px; }   
+ div.slider-nav span.right { background: url('../image/right-arrow.png') no-repeat; right: 10px; }
+ div.slider-nav span.left { background: url('../image/left-arrow.png') no-repeat; left: 10px; }   
 
 /* BULLET NAV */
  .orbit-bullets { position: absolute; z-index: 1000; 
