@@ -118,7 +118,7 @@ body
     text-align: center;
     color: rgb(39, 39, 39);
 }
-.content-wrapper .main_part article div , span
+.content-wrapper .main_part article div ,.content-wrapper .main_part article span
 {
    padding: 0.25em;
 }
